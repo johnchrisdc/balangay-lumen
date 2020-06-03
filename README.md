@@ -1,24 +1,39 @@
-# Lumen PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+# Balangay Lumen
+### This project is using the data from  **[flores-jacob/philippine-regions-provinces-cities-municipalities-barangays](https://github.com/flores-jacob/philippine-regions-provinces-cities-municipalities-barangays)**
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+#### Setup
+    php artisan migrate
+    php artisan db:seed --class=DataSeeder
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+#### End points
+See [Balangay.postman_collection.json](https://github.com/johnchrisdc/balangay-lumen/blob/master/Balangay.postman_collection.json 
+"Balangay.postman_collection.json")
+ - regions
+- regions/{region_id}
+- regions/{region_id}/provinces
+- provinces
+- provinces/{province_id}
+- provinces/{province_id}/municipalities
+- municipalities
+- municipalities/{municipality_id}
+- municipalities/{municipality_id}/barangays
+- barangays
+- barangays/{barangay_id}
 
-## Contributing
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### License
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
 
-## Security Vulnerabilities
+      Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+      Everyone is permitted to copy and distribute verbatim or modified
+      copies of this license document, and changing it is allowed as long
+      as the name is changed.
 
-## License
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+      TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+      0. You just DO WHAT THE FUCK YOU WANT TO.
