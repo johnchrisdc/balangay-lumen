@@ -25,7 +25,7 @@ class DataController extends Controller
     }
 
     public function getAllProvinces() {
-        return Province::all();
+        return Province::orderBy('name', 'asc')->get();
     }
 
     public function getProvince($province_id) {
@@ -37,7 +37,7 @@ class DataController extends Controller
     }
 
     public function getMunicipalities() {
-        return Municipality::paginate(100);
+        return Municipality::orderBy('name', 'asc')->paginate(100);
     }
 
     public function getMunicipality($municipality_id) {
@@ -49,7 +49,7 @@ class DataController extends Controller
     }
 
     public function getBarangays() {
-        return Barangay::paginate(100);
+        return Barangay::orderBy('name', 'asc')->paginate(100);
     }
 
     public function getBarangay($barangay_id) {
