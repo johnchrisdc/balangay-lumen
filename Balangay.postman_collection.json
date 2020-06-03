@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "2e487666-9468-48e0-b94e-b4b41b00f2d1",
+		"name": "Balangay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Regions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/regions/{{REGION_ID}}",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"regions",
+						"{{REGION_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Region Provinces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/regions/{{REGION_ID}}/provinces",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"regions",
+						"{{REGION_ID}}",
+						"provinces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Provinces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Province Municipalities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/provinces/{{PROVINCE_ID}}/municipalities",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"provinces",
+						"{{PROVINCE_ID}}",
+						"municipalities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Province",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/provinces/{{PROVINCE_ID}}",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"provinces",
+						"{{PROVINCE_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Municipalities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Municipality",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/municipalities/{{MUNICIPALITY_ID}}",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"municipalities",
+						"{{MUNICIPALITY_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Municipality Barangays",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/municipalities/{{MUNICIPALITY_ID}}/barangays",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"municipalities",
+						"{{MUNICIPALITY_ID}}",
+						"barangays"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Barangays",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Barangay",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/barangays/{{BARANGAY_ID}}",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"barangays",
+						"{{BARANGAY_ID}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
