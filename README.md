@@ -3,6 +3,7 @@
 ### This project is using the data from  **[flores-jacob/philippine-regions-provinces-cities-municipalities-barangays](https://github.com/flores-jacob/philippine-regions-provinces-cities-municipalities-barangays)**
 
 #### Setup
+    composer install
     php artisan migrate
     php artisan db:seed --class=DataSeeder
 
